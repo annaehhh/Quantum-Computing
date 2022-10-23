@@ -1,2 +1,3 @@
 # Quantum-Computing
- Project in coorperation of Nordakademie and CGI 
+ Project in coorperation of Nordakademie Graduate School and CGI Inc.
+ 
