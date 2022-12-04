@@ -13,8 +13,15 @@ import pandas as pd
 #   1. harbour names
 #   2. shortest ferry connection
 
-df_harbours = pd.read_csv("data_harbours.csv")
+df_harbours = pd.read_csv("data_harbours_utf8.csv")
 print(df_harbours.head())
+
+#change format to the folllowing columns
+#    1. from
+#    2. to
+#    3. shortest distance
+
+
 
 #Input
 #Entering departure and arrival harbour
