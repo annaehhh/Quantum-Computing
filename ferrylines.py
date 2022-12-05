@@ -35,10 +35,13 @@ df_connections=df_connections[df_connections.Distance != 0]
 df_connections=df_connections.reset_index(drop=True)
 print(df_connections)
 
-#Input
+###
+###Input
+###
+
 #Entering departure and arrival harbour
-    #start=  input(str("Please enter start harbour:"))
-    #end= input(str("Please enter destination harbour:"))
+    departure=  input(str("Please enter start harbour:"))
+    destination= input(str("Please enter destination harbour:"))
 
 #Input validation
-# 1. Check whether start and end harbour is included in the input data
+# 1. Check whether departure and destination harbour is included in the input data
