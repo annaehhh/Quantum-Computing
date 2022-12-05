@@ -26,12 +26,13 @@ df_harbours=df_harbours.rename(columns={'Column1':"From"})
 
 #melt data
 df_connections= pd.melt(df_harbours,id_vars=['From'],var_name="To",value_name='Distance')
-print(df_connections.columns)
+#print(df_connections.columns)
 
 #filter NaN-values
 df_connections=df_connections[df_connections["Distance"].notnull()]
 #filter out 0.0 values
 df_connections=df_connections[df_connections.Distance != 0]
+df_connections=df_connections.reset_index(drop=True)
 print(df_connections)
 
 #Input
