@@ -40,8 +40,8 @@ print(df_connections)
 ###
 
 #Entering departure and arrival harbour
-    departure=  input(str("Please enter start harbour:"))
-    destination= input(str("Please enter destination harbour:"))
+departure=  input(str("Please enter start harbour:"))
+destination= input(str("Please enter destination harbour:"))
 
 #Input validation
 # 1. Check whether departure and destination harbour is included in the input data
