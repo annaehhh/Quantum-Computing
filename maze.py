@@ -106,10 +106,11 @@ class Maze:
                 #AE: create 4 variables
                 directions = {get_label(i, j, 'n'), get_label(i, j, 'w'), get_label(i+1, j, 'n'),
                               get_label(i, j+1, 'w')}
-                
+                print('type:', type(directions))
                 #AE: add constraints where sum_to_two_or_zero(directions)==True
                 self.csp.add_constraint(sum_to_two_or_zero, directions)
-                
+    
+        print("Constraints:",self.csp.constraints)       
         #print(self.csp.constraints) #AE:Test
     def _set_start_and_end(self):
         """Sets the values of the start and end locations of the maze.
