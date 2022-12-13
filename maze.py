@@ -106,6 +106,7 @@ class Maze:
                 #AE: create 4 variables
                 directions = {get_label(i, j, 'n'), get_label(i, j, 'w'), get_label(i+1, j, 'n'),
                               get_label(i, j+1, 'w')}
+                
                 #AE: add constraints where sum_to_two_or_zero(directions)==True
                 self.csp.add_constraint(sum_to_two_or_zero, directions)
                 
